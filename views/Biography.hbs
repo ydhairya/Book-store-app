@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fiction || Iconicreads</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> .container{
+                width:100%;
+                height:54px;
+                background-color: red;
+            }
+            ul{
+                list-style:none;
+                display:flex;
+            }
+          .contain{
+             width:100%;
+                height:54px;
+                background-color: rgb(0, 0, 0);
+                margin:-14px 0px;
+
+          }
+    .list li{
+    font-size: 22px;
+    margin: 14px 64px;
+    }
+    .list a{
+        color:white;
+        text-decoration:none;
+    }
+    ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+            #l-item{
+             font-size: 37px;
+    padding-top: 5px;
+    font-style: italic;
+    color: #0000bf;
+    font-weight: bold;
+}
+            
+           .form{
+              margin-left: 500px;
+                          }
+            #int{
+               width: 446px;
+    margin: 15px 0px;
+    height: 19px;
+    border-radius: 8px;
+            }
+              .tin{
+               border: 2px solid #cfcfcf;
+    width: 228px;
+    height: 345px;
+    text-align: center;
+    margin: 28px 2px;
+    display: inline-table;
+            }
+            .tin img{
+            height: 242px;
+    width: 195px;
+    margin: 20px 9px;
+            }
+            .btz{
+                margin: 2px -47px;
+    width: 160px;
+    font-size: 23px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #0065a1, transparent);
+    font-family: cursive;
+            }
+            .btz a{
+                text-decoration:none;}
+                #ten{
+                    margin: 28px 13px;
+                }
+                p{
+                    margin: 43px 427px;
+    font-size: 29px;
+    font-style: italic;
+    color: indianred;
+    font-family: emoji;
+                }
+                .container-2{
+                    margin-left:22px;
+                }
+                @media (max-width : 375px) and (min-height: 667px){
+#int{
+ margin-left: -320px;
+    width: 275px;
+}.container-2{
+margin-left: -123px;
+    margin-top: -55px;}
+.container{
+    width:100%;
+}
+.contain{
+    width: 100%;
+}
+.tin img {
+   height: 229px;
+    width: 183px;
+    margin: 20px 109px;
+}
+.tin {
+  border: 2px solid #ffffff;
+    width: 394px;
+    height: 403px;
+    text-align: center;
+    margin: 28px 103px;
+    display: inline-table;
+}
+b{
+    font-size: 23px;
+}
+.list li {
+    font-size: 19px;
+    margin: 14px 18px;
+}
+#l-item {
+    font-size: 27px;
+    padding-top: 12px;
+    font-style: italic;
+    color: #0000bf;
+    font-weight: bold;
+    padding-left: -23px;
+}
+#int {
+    margin-left: -472px;
+    width: 140px;
+}
+                }
+                </style>
+        <body>
+            <div class="container">
+             <ul class="u-list">
+                    <li id="l-item">Iconicreads</li>
+                    <li>
+                       <div class="form">
+                        <input type="text" id="int" placeholder="Search...." onkeyup="findFun()">
+                        </div>
+                       
+                        </div>
+                        <div class="contain">
+                            <ul class="list">
+                                <li><a href="/Home">Home</a></li>
+                                <li><a href="/About">About</a></li>
+                                <li><a href="/Contact">Contact Us</a></li>
+                            </ul>
+                            </div>
+        </div>
+        <div class="container-3">
+            <p></p>
+        </div>
+            <div class="container-2">
+          <div class="tin"><a href="/Wings"><img src="https://m.media-amazon.com/images/I/51wbVQTpTgL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"><b>Wings of Fire<br>APJ Abdul Kalam<br>₹211.50</b></a></div>
+       <div class="tin"><a href="/Steve"><img src="https://m.media-amazon.com/images/I/41n1edvVlLL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"><b>Steve Jobs<br>Walter Issacson<br>₹381.00</b></a></div>
+       <div class="tin"><a href="/Unbroken"><img src="https://m.media-amazon.com/images/I/51OzgIepk0L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"><b>Unbroken<br>Laura Hillenbrand<br>₹1,320.00</b></a></div>
+       <div class="tin"><a href="/Einstein"><img src="https://m.media-amazon.com/images/I/41Io-O19X8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"><b>Einstein:His Life and Universe<br>Walter Issacson<br>₹466.69</b></a></div>
+       <div class="tin"><a href="/Gandhi"><img src="https://m.media-amazon.com/images/I/31p6c1+NsDL._SY344_BO1,204,203,200_.jpg"><b>The Years That Ghanges The World<br>Ramachandra Guha<br>₹1,495.00</b></a></div>
+            </div>
+        </body><script> 
+           function findFun(){
+    let find = document.getElementById('int').value.toUpperCase();
+    let mycontainer = document.getElementsByClassName('container-2');
+    let division  = document.getElementsByClassName('tin');
+
+   for(var i=0; i < division.length; i++){
+        let h4 = division[i].getElementsByTagName('b')[0];
+        if(h4){
+            let findvalue = h4.innerText || h4.innerHTML || h4.textContent;
+            if(findvalue.toUpperCase().indexOf(find) > -1){
+                division[i].style.display = ""
+            }else{
+                division[i].style.display = "none" 
+            }
+        }
+    
+   }
+    
+}     
+          </script>
+    </head>    
+</html>

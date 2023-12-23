@@ -1,0 +1,59 @@
+Usercoder.methods.generateAuthToken = async function () {
+    try{
+        let token = jwt.sign({_id : this._id},process.env.SECRET_KEY);
+        this.tokens = this.tokens.concat({token: token});
+        await this.save();
+        return token;
+    }catch(err){
+        console.log(err)
+    }
+}
+const DB = 'mongodb+srv://ydhairya23:<1122334456>@cluster0.wdwvjyw.mongodb.net/Iconicreads?retryWrites=true&w=majority'
+mongoose.connect(DB).then(() => {
+    console.log('Database Connected Successfully!')
+}).catch((err) =>{
+    console.log(err)
+})
+SECRET_KEY=EQDIUEWFEWRKJTERHOIFVOIHEFIJOEIFGHIRHGHJFIT9847HFKJDFBHJHJ
+const contain= document.querySelector('.container')
+        contain.style.display = "none"
+ C:\Users\Lenovo\Books\engines\public\search.mjs     
+  <script type="importmap">
+        {
+            "imports":{
+                "./writers" : "../public/Coders.mjs"
+            }
+        }
+       </script>
+         var Nameofbook = req.body.nameofbook;
+    var Genre = req.body.genre;
+    var Nameofauthor = req.body.nameofauthor;
+    var Url = req.body.url;
+     import mongoose from 'https://cdn.jsdelivr.net/npm/mongoose@8.0.0/+esm'
+                    
+const Book__name = document.getElementById('input-1').value;
+const writerSchema = {
+    Nameofauthor : String,
+    Nameofbook : String,
+    Genre : String,
+    Url : String,
+    Description : String,
+}
+const Writers = mongoose.model('books',writerSchema)
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ydhairya23@gmail.com",
+    Password : "1122334456",
+    To : 'yvarsha1743@gmail.com',
+    From : document.getElementById('email').value,
+    Subject : "This is the subject",
+    Body : "Name:" + document.getElementById('name').value;
+    + " <br> Email:" + document.getElementById('email').value
+    + " <br> Message:" + document.getElementById('message').value
+}).then(
+  message => alert(message)
+);
+                <div class="tin"><img src="https://www.amazon.in/Global-Warming-Sweetness-Life-Sands/dp/0262037645"><button type="text" class="btz"><a href="https://m.media-amazon.com/images/I/912VGdlnk-L._SY425_.jpg">Buy</a></button></div>
+                <div class="tin"><img src="https://www.amazon.in/Bumf-1-I-Buggered-Kaiser/dp/1606997483"><button type="text" class="btz"><a href="https://m.media-amazon.com/images/I/71Irt6olFbL._SY425_.jpg">Buy</a></button></div>
+                <div class="tin"><img src="https://www.amazon.de/Pal%C3%A4stina-Eine-Comic-Reportage-Joe-Sacco/dp/3861506092"><button type="text" class="btz"><a href="https://m.media-amazon.com/images/I/51XlUJ2tUML._SY425_.jpg">Buy</a></button></div>
+                <div class="tin"><img src="https://m.media-amazon.com/images/I/616b5aPiM-L._SY425_.jpg"

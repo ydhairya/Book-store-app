@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Login Page || Iconicreads
+    </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b4f6842af.js" crossorigin="anonymous"></script>
+    <style>
+      body{
+        background:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80')
+      }
+    .fa-regular, .far {
+   font-weight: 700;
+    font-size: 84px;
+    margin-left: 176px;
+    margin-top: -62px;
+    color: yellow;
+}
+      .container{
+border: 2px solid #c1a1a1;
+    height: 860px;
+    width: 452px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 16px;
+    background: #f7f8ff7a;}
+      input{
+ width: 397px;
+    height: 45px;
+    margin: 15px;
+    margin-left: 28px;
+    background: #c1c1cf;
+    border: none;
+    border-radius: 10px;
+    }
+      b{
+        font-size: 26px;
+    margin: 25px;
+
+      }
+      button{
+       width: 358px;
+    border-radius: 18px;
+    height: 43px;
+    margin-top: 35px;
+    font-size: 19px;
+    margin-left: 45px;
+    background: #4c9d4cba;
+    color: white;
+      }
+      p{
+      margin-left: 136px;
+    font-size: 20px;
+      }
+      form{margin-top: 38px}
+       #para{
+            font-size: 34px;
+    color: red;
+    margin-top: 56px;
+        margin-left: 493px;
+      }
+      #email{
+       margin-top: -18px;
+      }
+     a{
+      color:blue;
+     }
+     #para-2{
+    font-size: 40px;
+    margin-left: 12px;
+    font-family: math;color: #0126ab;
+    font-weight: bolder;
+     }
+     #para-3{
+     font-size: 33px;
+    margin-left: 60px;
+    font-family: math;color: #065a97;font-weight:900;
+     }
+     #para-4{
+    font-size: 22px;
+    margin-left: 43px;
+    font-family: math;
+    margin-top: -23px;color: #065a97;
+     }
+     #para2{
+      font-size:20px;
+      color:red;
+      margin:5px 39px;
+     }
+     #para1{
+      font-size:20px;
+      color:red;
+      margin:5px 29px;
+     }
+     @media (max-width: 375px) and (max-height: 667px){
+      #para-2{
+        font-size:23px;
+        margin:auto;
+      }input {
+    width: 271px;}
+     .container {
+    border: 2px solid #c1a1a1;
+    height: 834px;
+    width: 343px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 16px;
+    background: #f7f8ff7a;
+}#para-2 {
+    font-size: 23px;
+    margin: 13px 42px;
+}.fa-regular, .far {
+    font-weight: 700;
+    font-size: 84px;
+    margin-left: 124px;
+    margin-top: -8px;
+    color: yellow;
+}#para-4 {
+    font-size: 19px;
+    margin-left: 17px;
+    font-family: math;
+    margin-top: -23px;
+    color: #065a97;
+} button {
+    width: 233px;
+    border-radius: 18px;
+    height: 43px;
+    margin-top: 35px;
+    font-size: 19px;
+    margin-left: 45px;
+    background: #4c9d4cba;
+    color: white;
+}a {
+    color: blue;
+    margin: -63px;
+}
+     } 
+    </style>
+    <body>
+      <p id="para"></p>
+      <div class="container"> 
+        <p id="para-2">Welcome to Iconicreads</p><br>
+        <i class="fa-regular fa-face-smile-beam"></i>
+        <p id="para-3">Sign in to your account</p><br>
+        <p id="para-4">Experience the most interesting books</p>
+        <form class="form" action="/Login" method="POST" onsubmit="validation()">
+        <b>Your Email</b><br><p id="para1" class="para0"></p><br><input id="email" type="text" name="useremailid" placeholder="e.g. xyz134@gmail.com">
+        <b>Your Password</b><br>
+        <p id="para2" class="para0"></p>
+        <input id="password" type="text"  name="userpassword"   placeholder="e.g. 182%0o345">
+        <button type="submit" value="submit">Sign in</button><br>
+        <p><a href="/Sign">Don't have an account?</a></p></form>
+      </div>
+      <script>
+     function validation(){
+      let email = document.getElementById('email').value;
+      let password = document.getElementById('password').value;
+      if(email == "",password == ""){
+       document.getElementById('para').innerHTML="Please fill the valid data!"
+       document.getElementById('email').style.border = "2px solid red"
+        document.getElementById('password').style.border = "2px solid red"
+      }
+      else if(password.length < 8){
+        document.getElementById('para2').innerHTML="Password must contain minimum 8 characters"
+         document.getElementById('password').style.border = "2px solid red"
+
+      }
+      else{
+        return true      
+            }
+            function dbclick(){
+document.getElementById('email').style.border = "2px solid green"
+        document.getElementById('password').style.border = "2px solid green"
+
+            }
+     }
+     
+      </script>
+    </body>
+  </head>
+</html>
