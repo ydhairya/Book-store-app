@@ -16,7 +16,6 @@ app.set('views',path.join(__dirname , 'views')
 
 dotenv.config({path: './config.env'})
 const PORT = process.env.PORT || 80;
-import Writers from './engines/public/Coders.mjs';
 app.use( express.urlencoded());
 app.use(express.static(path.join(__dirname,'engines')))
 const DB = 'mongodb+srv://Dhairya:1122334456@cluster0.xhbqz3d.mongodb.net/Aryabhatta?retryWrites=true&w=majority';
@@ -75,20 +74,14 @@ app.post('/post', (req,res)=>{
         console.log('Submition Failed!')
         return false
     }else{
-        const writers = new Writers ({
-            Nameofauthor : req.body.nameofauthor,
-            Nameofbook : req.body.nameofbook,
-            Genre : req.body.genre,
-            Url : req.body.url,
-            Description : req.body.description
-        })
+       console.log('Hello')
+        }
          writers.save()
          res.status(200).render('Contact')
          
          
-    }
+    })
     
-})
 app.get('/Biography',(req,res)=>{
     res.status(200).render('Biography')
 })

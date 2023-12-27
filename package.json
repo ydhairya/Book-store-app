@@ -2,14 +2,14 @@
   "name": "books",
   "version": "1.0.0",
   "description": "",
-  "main": "index.mjs",
+  "main": "index.js",
   "type":"module",
  "engines" :{
  "node" :"18.x"
  },
        "scripts": {
-    "build":"CL= npm run build",
-    "start": "node index.mjs"
+    "build":"CI= npm run build",
+    "start": "node main.mjs"
   },
   "author": "Dhairya yadav",
   "license": "ISC",
