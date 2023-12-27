@@ -8,7 +8,7 @@
  "node" :"18.x"
  },
        "scripts": {
-    "build":"npm run build",
+    "build":"CL= npm run build",
     "start": "node index.mjs"
   },
   "author": "Dhairya yadav",
